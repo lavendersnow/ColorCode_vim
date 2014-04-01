@@ -12,8 +12,8 @@
 		82811A5718EAA7A40049012B /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82811A5618EAA7A40049012B /* CoreServices.framework */; };
 		82811A5918EAA7A40049012B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82811A5818EAA7A40049012B /* CoreFoundation.framework */; };
 		82811A5F18EAA7A40049012B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82811A5D18EAA7A40049012B /* InfoPlist.strings */; };
-		82811A6118EAA7A50049012B /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 82811A6018EAA7A50049012B /* GenerateThumbnailForURL.c */; };
-		82811A6318EAA7A50049012B /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 82811A6218EAA7A50049012B /* GeneratePreviewForURL.c */; };
+		82811A6118EAA7A50049012B /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 82811A6018EAA7A50049012B /* GenerateThumbnailForURL.m */; };
+		82811A6318EAA7A50049012B /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 82811A6218EAA7A50049012B /* GeneratePreviewForURL.m */; };
 		82811A6518EAA7A50049012B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 82811A6418EAA7A50049012B /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +25,8 @@
 		82811A5818EAA7A40049012B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		82811A5C18EAA7A40049012B /* ColorCode_vim-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorCode_vim-Info.plist"; sourceTree = "<group>"; };
 		82811A5E18EAA7A40049012B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		82811A6018EAA7A50049012B /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		82811A6218EAA7A50049012B /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		82811A6018EAA7A50049012B /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		82811A6218EAA7A50049012B /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		82811A6418EAA7A50049012B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		82811A6618EAA7A50049012B /* ColorCode_vim-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorCode_vim-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,8 +77,8 @@
 		82811A5A18EAA7A40049012B /* ColorCode_vim */ = {
 			isa = PBXGroup;
 			children = (
-				82811A6018EAA7A50049012B /* GenerateThumbnailForURL.c */,
-				82811A6218EAA7A50049012B /* GeneratePreviewForURL.c */,
+				82811A6018EAA7A50049012B /* GenerateThumbnailForURL.m */,
+				82811A6218EAA7A50049012B /* GeneratePreviewForURL.m */,
 				82811A6418EAA7A50049012B /* main.c */,
 				82811A5B18EAA7A40049012B /* Supporting Files */,
 			);
@@ -179,8 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82811A6118EAA7A50049012B /* GenerateThumbnailForURL.c in Sources */,
-				82811A6318EAA7A50049012B /* GeneratePreviewForURL.c in Sources */,
+				82811A6118EAA7A50049012B /* GenerateThumbnailForURL.m in Sources */,
+				82811A6318EAA7A50049012B /* GeneratePreviewForURL.m in Sources */,
 				82811A6518EAA7A50049012B /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +314,7 @@
 				82811A6B18EAA7A50049012B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
