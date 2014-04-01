@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82811A5318EAA7A40049012B /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82811A5218EAA7A40049012B /* QuickLook.framework */; };
+		82811A5518EAA7A40049012B /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82811A5418EAA7A40049012B /* ApplicationServices.framework */; };
+		82811A5718EAA7A40049012B /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82811A5618EAA7A40049012B /* CoreServices.framework */; };
+		82811A5918EAA7A40049012B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82811A5818EAA7A40049012B /* CoreFoundation.framework */; };
+		82811A5F18EAA7A40049012B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82811A5D18EAA7A40049012B /* InfoPlist.strings */; };
+		82811A6118EAA7A50049012B /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 82811A6018EAA7A50049012B /* GenerateThumbnailForURL.c */; };
+		82811A6318EAA7A50049012B /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 82811A6218EAA7A50049012B /* GeneratePreviewForURL.c */; };
+		82811A6518EAA7A50049012B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 82811A6418EAA7A50049012B /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		82811A4F18EAA7A40049012B /* ColorCode_vim.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorCode_vim.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		82811A5218EAA7A40049012B /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		82811A5418EAA7A40049012B /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		82811A5618EAA7A40049012B /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		82811A5818EAA7A40049012B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		82811A5C18EAA7A40049012B /* ColorCode_vim-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorCode_vim-Info.plist"; sourceTree = "<group>"; };
+		82811A5E18EAA7A40049012B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		82811A6018EAA7A50049012B /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		82811A6218EAA7A50049012B /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		82811A6418EAA7A50049012B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		82811A6618EAA7A50049012B /* ColorCode_vim-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorCode_vim-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82811A4A18EAA7A40049012B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82811A5918EAA7A40049012B /* CoreFoundation.framework in Frameworks */,
+				82811A5318EAA7A40049012B /* QuickLook.framework in Frameworks */,
+				82811A5718EAA7A40049012B /* CoreServices.framework in Frameworks */,
+				82811A5518EAA7A40049012B /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82811A4418EAA7A40049012B = {
+			isa = PBXGroup;
+			children = (
+				82811A5A18EAA7A40049012B /* ColorCode_vim */,
+				82811A5118EAA7A40049012B /* Frameworks */,
+				82811A5018EAA7A40049012B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82811A5018EAA7A40049012B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82811A4F18EAA7A40049012B /* ColorCode_vim.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82811A5118EAA7A40049012B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82811A5218EAA7A40049012B /* QuickLook.framework */,
+				82811A5418EAA7A40049012B /* ApplicationServices.framework */,
+				82811A5618EAA7A40049012B /* CoreServices.framework */,
+				82811A5818EAA7A40049012B /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82811A5A18EAA7A40049012B /* ColorCode_vim */ = {
+			isa = PBXGroup;
+			children = (
+				82811A6018EAA7A50049012B /* GenerateThumbnailForURL.c */,
+				82811A6218EAA7A50049012B /* GeneratePreviewForURL.c */,
+				82811A6418EAA7A50049012B /* main.c */,
+				82811A5B18EAA7A40049012B /* Supporting Files */,
+			);
+			path = ColorCode_vim;
+			sourceTree = "<group>";
+		};
+		82811A5B18EAA7A40049012B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82811A5C18EAA7A40049012B /* ColorCode_vim-Info.plist */,
+				82811A5D18EAA7A40049012B /* InfoPlist.strings */,
+				82811A6618EAA7A50049012B /* ColorCode_vim-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		82811A4B18EAA7A40049012B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		82811A4E18EAA7A40049012B /* ColorCode_vim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82811A6918EAA7A50049012B /* Build configuration list for PBXNativeTarget "ColorCode_vim" */;
+			buildPhases = (
+				82811A4918EAA7A40049012B /* Sources */,
+				82811A4A18EAA7A40049012B /* Frameworks */,
+				82811A4B18EAA7A40049012B /* Headers */,
+				82811A4C18EAA7A40049012B /* Resources */,
+				82811A4D18EAA7A40049012B /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorCode_vim;
+			productName = ColorCode_vim;
+			productReference = 82811A4F18EAA7A40049012B /* ColorCode_vim.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82811A4518EAA7A40049012B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = purple_rain;
+			};
+			buildConfigurationList = 82811A4818EAA7A40049012B /* Build configuration list for PBXProject "ColorCode_vim" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 82811A4418EAA7A40049012B;
+			productRefGroup = 82811A5018EAA7A40049012B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82811A4E18EAA7A40049012B /* ColorCode_vim */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82811A4C18EAA7A40049012B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82811A5F18EAA7A40049012B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		82811A4D18EAA7A40049012B /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82811A4918EAA7A40049012B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82811A6118EAA7A50049012B /* GenerateThumbnailForURL.c in Sources */,
+				82811A6318EAA7A50049012B /* GeneratePreviewForURL.c in Sources */,
+				82811A6518EAA7A50049012B /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82811A5D18EAA7A40049012B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82811A5E18EAA7A40049012B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82811A6718EAA7A50049012B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		82811A6818EAA7A50049012B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		82811A6A18EAA7A50049012B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorCode_vim/ColorCode_vim-Prefix.pch";
+				INFOPLIST_FILE = "ColorCode_vim/ColorCode_vim-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		82811A6B18EAA7A50049012B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorCode_vim/ColorCode_vim-Prefix.pch";
+				INFOPLIST_FILE = "ColorCode_vim/ColorCode_vim-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82811A4818EAA7A40049012B /* Build configuration list for PBXProject "ColorCode_vim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82811A6718EAA7A50049012B /* Debug */,
+				82811A6818EAA7A50049012B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82811A6918EAA7A50049012B /* Build configuration list for PBXNativeTarget "ColorCode_vim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82811A6A18EAA7A50049012B /* Debug */,
+				82811A6B18EAA7A50049012B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82811A4518EAA7A40049012B /* Project object */;
+}
